@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss Issues</title>
+
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="flex items-center justify-around h-screen p-8 bg-gray-100">
+
+    <div class="relative flex items-center justify-center w-32 h-32 bg-gray-200">
+      <div class="absolute w-full h-full transform rotate-45 bg-blue-400"></div>
+      <div class="absolute font-bold">Default</div>
+    </div>
+
+    <div class="relative flex items-center justify-center w-32 h-32 bg-gray-200">
+      <div class="absolute w-full h-full origin-bottom transform rotate-45 bg-green-400"></div>
+      <div class="absolute font-bold">Origin Bottom</div>
+    </div>
+    
+    <div class="relative flex items-center justify-center w-32 h-32 bg-gray-200">
+      <div class="absolute w-full h-full origin-[80% 40%] transform rotate-45 bg-red-400"></div>
+      <div class="absolute font-bold">Arbitrary</div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
